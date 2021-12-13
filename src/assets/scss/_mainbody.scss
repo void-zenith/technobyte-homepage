@@ -1,18 +1,21 @@
 .mainbody-container {
-  display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: $secondary-color;
-  // margin-top: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__left {
-    flex: 0.5;
-    padding-left: 110px;
-    padding-top: 130px;
+    padding-top: 60px;
 
     .left-container__content {
-      width: 500px;
-      height: 350px;
+      // width: 500px;
+      // height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       .technobyte {
         text-align: center;
@@ -32,6 +35,7 @@
         line-height: 1;
         margin-bottom: 25px;
         letter-spacing: -4.5px;
+        text-align: center;
 
         h1 {
           @include set-text-style(45px,
@@ -80,19 +84,9 @@
 
   &__arrow {
     background: "#918b8a",
-      colo // border-radiud: borderRadius: "50%",
-      // width: 35,
-      // height: 35,
   }
 
   .arrow {
     background: "#918b8a",
-      // border-radius: "50%",
-      // width: 35,
-      // height: 35,
-  }
-
-  &__right {
-    flex: 0.5;
   }
 }
