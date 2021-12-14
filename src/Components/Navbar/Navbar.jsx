@@ -1,6 +1,4 @@
 
-
-
 import React from 'react'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import Logo from "../../assets/icons/logo";

@@ -1,0 +1,19 @@
+.faq-container {
+    width: 400 !important;
+    padding: 40;
+}
+
+.faq_questions {
+    color: white;
+}
+
+.faq_answer {
+    color: #90b19f;
+}
+
+.FAQ-heading {
+    color: #9fe7bf;
+    overflow: hidden;
+    font-family: "Karla", sans-serif;
+    color: #d0eade
+}

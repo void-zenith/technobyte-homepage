@@ -57,6 +57,7 @@
       .messaage {
         margin-bottom: 25px;
         line-height: 2;
+        color: #fff !important;
 
         @include set-text-style(14px,
           Regular,
