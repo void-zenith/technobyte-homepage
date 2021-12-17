@@ -8,7 +8,7 @@
   font-size: 1rem;
   top: 0;
   color: #fff;
-
+  z-index: 1000;
 
   &__logo {
     flex: 0.25;
@@ -53,18 +53,19 @@
       $primary-color);
 
     .contact-container {
-      //padding: 10px;
       padding: 9px;
       cursor: pointer;
       width: 120px;
-      color: white;
+      color: $primary-color;
       text-decoration: none;
       border: 1px solid $primary-color;
+      transition: all .5s ease;
     }
 
     .contact-container:hover {
       background: $primary-color;
       color: black;
+
     }
   }
 }

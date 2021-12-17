@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const OurTeam = () => {
+  const myRef = useRef();
   return (
-    <div id="our_team" className="mainbody-container">
+    <div ref={myRef} id="Our_Team" className="mainbody-container">
       <div className="mainbody-container__left">
         <div className="left-container__content">
           <div className="technobyte">Our Team</div>

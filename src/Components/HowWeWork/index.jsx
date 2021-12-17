@@ -1,10 +1,10 @@
-import React from 'react'
-import Code from "../../assets/image/code";
-import Partilce from "../Mainbody/particle";
+import React, { useRef } from 'react'
+
 
 const HowWeWork = () => {
+    const myRef = useRef();
     return (
-        <div id="how_we_work" className="mainbody-container">
+        <div ref={myRef} id="How_We_Work" className="mainbody-container">
 
             <div className="mainbody-container__left">
                 <div className="left-container__content">

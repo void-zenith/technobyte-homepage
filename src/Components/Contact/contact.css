@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+.contact-container {
+    background: #1a1c19;
+    color: white;
+    font-family: "Inter";
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catchphrase {
+    margin-top: 70px;
+}
+
+.catchphrase h5 {
+    overflow: hidden;
+    color: aliceblue;
+}
+
+.catchphrase h7 {
+    color: #90b19f;
+    font-size: 17px;
+}
+
+.email {
+    margin-top: 40px;
+}
+
+.input-group-text {
+    border: 1px solid #738079;
+    background-color: #2B2B2B;
+    color: #17dd7d;
+    border-radius: 0px;
+    border-right: none;
+    font-size: 22px;
+}
+
+.input,
+.input:focus {
+    border-radius: 0%;
+    border: 1px solid #738079;
+    background-color: rgb(32, 31, 31);
+    color: #47544c;
+    color: wheat;
+    border-left: none;
+    box-shadow: none;
+    height: 50px;
+}
+
+
+.send {
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: none;
+    color: black;
+    height: 50px;
+    font-weight: 600;
+    background-color: #17dd7d;
+    text-align: center;
+    width: 80px;
+}
+
+.send:hover {
+    background: none;
+    color: #17dd7d;
+    border: 1px solid #17dd7d;
+
+}
+
+.copyright {
+    color: #47544c;
+    padding-top: 100px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.find-us {
+    font-size: 18px;
+    padding-top: 80px;
+    font-weight: 600;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-top {
+    bottom: -2325px;
+    text-align: center;
+    left: 618px;
+}
+
+.social-media {
+    background-color: #2B2B2B;
+    border-radius: 0px;
+    border-right: none;
+    font-size: 18px;
+    height: 40px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 14px;
+    /* 28px 14px */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: #17dd7d;
+}
+
+.social-media:hover {
+    background-color: #17dd7d;
+    color: #2B2B2B;
+}

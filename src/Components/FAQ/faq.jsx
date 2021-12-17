@@ -1,11 +1,11 @@
-import React from 'react'
-import Code from "../../assets/image/code";
+import React, { useRef } from 'react'
 import { Row, Col, Container } from "react-bootstrap";
 import "../../assets/css/faq.css"
 
 const FAQ = () => {
+    const myRef = useRef();
     return (
-        <div id="faq" className="mainbody-container">
+        <div ref={myRef} id="FAQ" className="mainbody-container pb-5">
             <div className="mainbody-container__left">
                 <div className="left-container__content">
                     <h1 className="FAQ-heading">F.A.Q</h1>

@@ -1,14 +1,17 @@
-import React from "react";
-import Code from "../../assets/image/code";
-import Partilce from "./particle";
+import React, { useRef } from "react";
 import { ArrowRight } from 'react-bootstrap-icons';
 import DownArrow from "../DownArrow";
 import { Link } from "react-scroll";
 
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, } from "react-bootstrap";
+
+
 const Mainbody = () => {
+
+  const myRef = useRef(null);
+
   return (
-    <div id="home" className="mainbody-container">
+    <div ref={myRef} id="Home" className="mainbody-container">
       <div className="content">
         <Row className="justify-content-md-center">
           <Col xs="12" md="auto">
@@ -39,7 +42,7 @@ const Mainbody = () => {
                 </div>
               </div>
             </div>
-            <DownArrow></DownArrow>
+            <DownArrow myRef={myRef}></DownArrow>
           </Col>
         </Row>
       </div>
