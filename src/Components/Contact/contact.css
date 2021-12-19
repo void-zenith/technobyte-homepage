@@ -40,6 +40,10 @@
     font-size: 22px;
 }
 
+.input {
+    background: none;
+}
+
 .input,
 .input:focus {
     border-radius: 0%;
@@ -117,4 +121,14 @@
 .social-media:hover {
     background-color: #17dd7d;
     color: #2B2B2B;
+}
+
+@media (max-width: 280px) {
+
+    .catchphrase,
+    .email {
+        padding: 0px 20px;
+    }
+
+
 }

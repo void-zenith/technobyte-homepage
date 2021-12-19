@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { ArrowRight } from 'react-bootstrap-icons';
 import DownArrow from "../DownArrow";
 import { Link } from "react-scroll";
-
 import { Row, Col, } from "react-bootstrap";
 
 
@@ -30,7 +29,7 @@ const Mainbody = () => {
                 </div>
                 <div className="messaage">
                   <p className="text-responsive text-center">
-                    Leveraging our design, web, and mobile development team,<br /> we help
+                    Leveraging our design, web, and mobile development team, we help
                     businesses build end to end digital products.
                   </p>
                 </div>

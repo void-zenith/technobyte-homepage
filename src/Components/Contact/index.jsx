@@ -7,6 +7,7 @@ import { AiFillInstagram } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa';
 
 import "./contact.css"
+
 const Contact = () => {
     return (
         <div id='Contact' className="contact-container">

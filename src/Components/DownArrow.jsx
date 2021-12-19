@@ -41,6 +41,7 @@ const DownArrow = ({ myRef }) => {
         bottom: "45px",
         right: "75px",
         cursor: "pointer",
+        zIndex: 1000,
 
       }} onClick={() => scrollToNextSection(myRef)} />
     </Link>
