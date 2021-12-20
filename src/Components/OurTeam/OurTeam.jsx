@@ -4,8 +4,8 @@ const OurTeam = () => {
   const myRef = useRef();
   return (
     <div ref={myRef} id="Our_Team" className="mainbody-container">
-      <div className="mainbody-container__left">
-        <div className="left-container__content">
+      <div className="mainbody-container">
+        <div className="container__content">
           <div className="technobyte">Our Team</div>
           <div className="catchphrase">
             <h1>
@@ -18,12 +18,10 @@ const OurTeam = () => {
             Leveraging our design, web, and mobile development team, we help
             business build end to end digital products.
           </div>
-
         </div>
-
       </div>
     </div>
-  )
+  );
 };
 
 export default OurTeam;

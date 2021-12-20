@@ -1,12 +1,20 @@
-
 import React, { useRef } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Logo from "../../assets/icons/logo";
 import { Link } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.css";
 
+//importing css
+import "./navbar.css";
 const NavBar = () => {
-  const links = ["Home", "Services", "How_We_Work", "Our_Team", "FAQ", "Contact"];
+  const links = [
+    "Home",
+    "Services",
+    "How_We_Work",
+    "Our_Team",
+    "FAQ",
+    "Contact",
+  ];
   return (
     <div>
       <Navbar className="navbar-container" collapseOnSelect expand="lg">

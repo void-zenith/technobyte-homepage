@@ -1,0 +1,81 @@
+.mainbody-container {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.mainbody-container {
+  padding-top: 60px;
+}
+
+.container__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__content .technobyte {
+  text-align: center;
+  padding: 5px;
+  border-radius: 40px;
+  width: 170px;
+  background-color: var(--technobyte-bg-color);
+  font-size: 15px;
+  font-family: var(--primary-font-family);
+  font-weight: 300;
+  color: var(--technobyte-text-color);
+}
+
+.container__content .catchphrase {
+  line-height: 1;
+  margin-bottom: 25px;
+  letter-spacing: -2.5px;
+  text-align: center;
+}
+
+.container__content .catchphrase h1 {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--technobyte-text-color);
+  font-family: var(--primary-font-family);
+}
+
+.container__content .catchphrase-for {
+  font-size: 45px;
+  font-family: var(--primary-font-family);
+  color: var(--primary-color);
+}
+
+.container__content .message {
+  margin-bottom: 25px;
+  line-height: 2;
+  color: #fff !important;
+  padding-inline-end: 0px 460px !important;
+  width: 400px;
+  font-size: 14px;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  color: var(--text-color);
+}
+.container__content .letsworktogether {
+  transition: all 0.5s ease;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-family);
+}
+
+.container__content .letsworktogether:hover {
+  background: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}

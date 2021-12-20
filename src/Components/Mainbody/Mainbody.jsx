@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import { ArrowRight } from 'react-bootstrap-icons';
+import { ArrowRight } from "react-bootstrap-icons";
 import DownArrow from "../DownArrow";
 import { Link } from "react-scroll";
-import { Row, Col, } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
-
+//importing css
+import "./mainbody.css";
 const Mainbody = () => {
-
   const myRef = useRef(null);
 
   return (
@@ -14,28 +14,29 @@ const Mainbody = () => {
       <div className="content">
         <Row className="justify-content-md-center">
           <Col xs="12" md="auto">
-            <div className="mainbody-container__left">
-              <div className="left-container__content">
+            <div className="mainbody-container">
+              <div className="container__content">
                 <div className="d-flex">
                   <div className="technobyte">Technobyte Nepal</div>
                 </div>
                 <div className="catchphrase">
                   <h1 className="text-responsive">
-                    We build softwares for{" "}
-                    <br />
+                    We build softwares for <br />
                     <span className="catchphrase-for">startups</span> &{" "}
                     <span className="catchphrase-for">Businesses.</span>
                   </h1>
                 </div>
                 <div className="messaage">
                   <p className="text-responsive text-center">
-                    Leveraging our design, web, and mobile development team, we help
-                    businesses build end to end digital products.
+                    Leveraging our design, web, and mobile development team, we
+                    help businesses build end to end digital products.
                   </p>
                 </div>
                 <div className="d-flex">
                   <div className="letsworktogether">
-                    <Link to="how_we_work" smooth={true} duration={1000}>Let's work together</Link>
+                    <Link to="how_we_work" smooth={true} duration={1000}>
+                      Let's work together
+                    </Link>
                     <ArrowRight style={{ marginLeft: "6px", fontSize: "20" }} />
                   </div>
                 </div>
@@ -45,7 +46,6 @@ const Mainbody = () => {
           </Col>
         </Row>
       </div>
-
     </div>
   );
 };

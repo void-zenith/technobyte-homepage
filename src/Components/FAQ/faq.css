@@ -1,0 +1,23 @@
+.faq-container {
+  width: 400 !important;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 40px 40px 0px 40px; */
+}
+
+.faq_questions {
+  color: white;
+}
+
+.faq_answer {
+  color: #90b19f;
+}
+
+.FAQ-heading {
+  color: #9fe7bf;
+  overflow: hidden;
+  font-family: "Karla", sans-serif;
+  color: #d0eade;
+}

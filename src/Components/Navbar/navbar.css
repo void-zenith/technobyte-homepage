@@ -1,0 +1,72 @@
+.navbar-container {
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  font-size: 1rem;
+  top: 0;
+  color: #fff;
+  z-index: 1000;
+}
+
+.navbar-container__logo {
+  flex: 0.25;
+  text-align: center;
+}
+
+.navbar-container__link {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-family: var(--primary-font-family);
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.navbar-container__link .navbar-link__item {
+  display: flex;
+  flex: 0.2;
+  justify-content: space-around;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.navbar-container__contactus {
+  flex: 0.25;
+  text-align: center;
+  font-size: 17px;
+  color: var(--primary-color);
+  font-family: var(--primary-font-family);
+}
+
+.navbar-container__contactus .contact-container {
+  padding: 9px;
+  cursor: pointer;
+  width: 120px;
+  color: var(--primary-color);
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.navbar-container__contactus .contact-container:hover {
+  background: var(--primary-color);
+  color: black;
+}
+
+/* .navbar-light .navbar-toggler-icon {
+  background-image: url("../image/download\ \(1\).svg") !important;
+} */
+
+.active {
+  text-decoration: none;
+  color: #01bf71;
+}
+
+a:hover {
+  color: #fff;
+}
