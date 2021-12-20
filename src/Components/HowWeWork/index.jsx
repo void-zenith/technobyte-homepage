@@ -4,6 +4,7 @@ import { Row, Col, Container, Card } from 'react-bootstrap';
 import { IoMdChatboxes } from 'react-icons/io';
 
 import CurvedArrow from "react-curved-arrow";
+import { BsFillCollectionFill } from 'react-icons/bs';
 
 import { RiArrowUpDownLine } from 'react-icons/ri'
 import { IoIosPeople } from 'react-icons/io';
@@ -52,7 +53,7 @@ const HowWeWork = () => {
                             <div className="card-container">
                                 <div className="card-head">
                                     <div className="method">
-                                        <IoMdChatboxes className="icon" />
+                                        <BsFillCollectionFill className="icon" style={{ fontSize: '10px !important' }} />
                                         <div className="type">Prototype</div>
 
                                     </div>

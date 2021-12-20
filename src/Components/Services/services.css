@@ -29,7 +29,6 @@
 }
 
 .card {
-    margin-left: 100px;
     border: 1px solid #d0eade;
     background-color: #2B2B2B;
     height: 180px !important;
@@ -37,6 +36,24 @@
     overflow: hidden;
     font-size: 12px;
     border-radius: 0px;
+}
+
+.our-services {
+    height: 240px !important;
+    width: 700px !important;
+}
+
+.service-name {
+    margin-top: 35px;
+    font-size: 16px;
+    margin-left: 12px;
+
+}
+
+.patch-icon {
+    color: #17dd7d;
+    font-size: 22px;
+    margin-right: 13px;
 }
 
 .rec-arrow:hover {
@@ -61,12 +78,34 @@
 }
 
 
-@media (min-width: 500px) and (max-width: 1300px) {
+@media (max-width: 540px) and (max-width: 1300px) {
     .card {
         margin-left: 20px !important;
     }
-
 }
+
+@media (min-width: 540px) and (max-width: 770px) {
+    .card {
+        margin-left: 20px !important;
+
+    }
+
+    .our-services {
+        height: 280px !important;
+        width: 600px !important;
+
+    }
+
+    .service-name,
+    .patch-icon {
+        font-size: 16px;
+    }
+
+    .service-name {
+        margin-left: 0px !important;
+    }
+}
+
 
 @media (min-width: 350px) and (max-width: 440px) {
 
@@ -77,6 +116,8 @@
         background: #2B2B2B;
         margin-right: 20px;
     }
+
+    .our-services {}
 
     .namepos {
         padding-left: 10px;
@@ -94,6 +135,20 @@
         height: 60px;
         width: 60px;
         margin-left: 10px;
+    }
+
+    .our-services {
+        height: 280px !important;
+        width: 200px !important;
+    }
+
+    .service-name,
+    .patch-icon {
+        font-size: 12px;
+    }
+
+    .service-name {
+        margin-left: 0px !important;
     }
 
 }
@@ -126,11 +181,26 @@
         margin-left: 10px;
     }
 
+    .our-services {
+        height: 280px !important;
+        width: 200px !important;
+    }
+
+    .service-name,
+    .patch-icon {
+        font-size: 12px;
+    }
+
+    .service-name {
+        margin-left: 0px !important;
+    }
+
 
 }
 
+/* Surface duo */
 
-
+/* Galaxy fold */
 @media (max-width: 280px) {
 
     .card {
@@ -139,6 +209,21 @@
         margin-left: 1px;
 
     }
+
+    .our-services {
+        height: 280px !important;
+        width: 200px !important;
+    }
+
+    .service-name,
+    .patch-icon {
+        font-size: 12px;
+    }
+
+    .service-name {
+        margin-left: 0px !important;
+    }
+
 
     .namepos {
         padding-left: 1px;
