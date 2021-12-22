@@ -5,8 +5,12 @@ import { ArrowUp } from 'react-bootstrap-icons';
 import { FaFacebookF } from 'react-icons/fa'
 import { AiFillInstagram } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa';
-
+import { animateScroll as scroll } from 'react-scroll';
 import "./contact.css"
+
+const Top = () => {
+    scroll.scrollToTop();
+}
 
 const Contact = () => {
     return (
@@ -20,10 +24,11 @@ const Contact = () => {
                         width: "34px",
                         borderRadius: "50%",
                         padding: "5",
-                        // position: "sticky",
                         cursor: "pointer",
+                    }
+                    }
+                    onClick={Top}
 
-                    }}
                 />
             </div>
             <div className="contact-content px-2">

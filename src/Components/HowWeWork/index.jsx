@@ -37,17 +37,6 @@ const HowWeWork = () => {
                                 </div>
                             </div>
                         </Col>
-                        {/* <CurvedArrow /> */}
-                        {/* <picture>
-                            <source media="(min-width: 900px)" srcset="BigImage.png" />
-                            <source media="(min-width: 480px)" srcset="MediumImage.png" />
-                            <img src="OtherImage.png" alt="IfItDoesntMatchAnyMedia" />
-                        </picture> */}
-                        {/* 
-                        <Col>
-                            <img src="https://img.icons8.com/windows/32/000000/right3.png" style={{ color: "white", marginLeft: "200" }} height="20" width="100" />
-
-                        </Col> */}
 
                         <Col sm className="px-5 Prototype pb-5">
                             <div className="card-container">

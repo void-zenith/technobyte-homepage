@@ -5,9 +5,8 @@
     color: #d0eade;
     font-family: "Inter";
     overflow: hidden;
-    padding-top: 100px !important;
+    padding-top: 80px !important;
 }
-
 
 
 .services-content {
@@ -39,8 +38,16 @@
 }
 
 .our-services {
-    height: 240px !important;
+    height: 260px !important;
     width: 700px !important;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: flex-end !important;
+    height: 45px;
 }
 
 .service-name {
@@ -57,13 +64,22 @@
 }
 
 .rec-arrow:hover {
-    background: #7eb497 !important;
+    background: #17dd7d !important;
     color: white !important;
+
+}
+
+.rec-arrow-right:hover {
+    padding-left: 20px;
+}
+
+.rec-arrow-left:hover {
+    padding-right: 20px;
 }
 
 .rec-arrow {
     /* background: white !important; */
-    color: #7eb497 !important;
+    color: #17dd7d !important;
     background: none !important;
     transition: all 0.5s ease;
 }
@@ -78,21 +94,12 @@
 }
 
 
-@media (max-width: 540px) and (max-width: 1300px) {
-    .card {
-        margin-left: 20px !important;
-    }
-}
 
 @media (min-width: 540px) and (max-width: 770px) {
-    .card {
-        margin-left: 20px !important;
-
-    }
 
     .our-services {
         height: 280px !important;
-        width: 600px !important;
+        width: 460px !important;
 
     }
 
@@ -104,6 +111,11 @@
     .service-name {
         margin-left: 0px !important;
     }
+
+    .top-container {
+        height: 48px;
+        padding-top: 3px;
+    }
 }
 
 
@@ -113,11 +125,10 @@
         height: 230px !important;
         width: 200px !important;
         margin-left: 15px;
-        background: #2B2B2B;
         margin-right: 20px;
     }
 
-    .our-services {}
+
 
     .namepos {
         padding-left: 10px;
@@ -151,6 +162,10 @@
         margin-left: 0px !important;
     }
 
+    .top-container {
+        height: 48px;
+        padding-top: 3px;
+    }
 }
 
 
@@ -160,7 +175,7 @@
         height: 250px !important;
         width: 180px !important;
         margin-left: 2px;
-        background: #2B2B2B;
+
     }
 
     .namepos {
@@ -195,6 +210,10 @@
         margin-left: 0px !important;
     }
 
+    .top-container {
+        height: 48px;
+        padding-top: 3px;
+    }
 
 }
 
@@ -232,6 +251,11 @@
         align-items: center;
         margin-left: 10px;
 
+    }
+
+    .top-container {
+        height: 48px;
+        padding-top: 2px;
     }
 
     .bio {

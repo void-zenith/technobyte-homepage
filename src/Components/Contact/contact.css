@@ -27,9 +27,6 @@
     font-size: 17px;
 }
 
-.email {
-    margin-top: 40px;
-}
 
 .input-group-text {
     border: 1px solid #738079;
@@ -85,7 +82,7 @@
 
 .find-us {
     font-size: 18px;
-    padding-top: 80px;
+    padding-top: 60px;
     font-weight: 600;
 }
 

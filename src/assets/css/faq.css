@@ -1,7 +1,12 @@
 .faq-container {
-    width: 400 !important;
-    /* padding: 40px 40px 0px 40px; */
+    background: #141514;
+    color: #d0eade;
+    font-family: "Inter";
+    overflow: hidden;
+    /* padding-top: 100px !important; */
+    height: 100vh !important;
 }
+
 
 .faq_questions {
     color: white;

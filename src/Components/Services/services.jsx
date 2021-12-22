@@ -104,6 +104,12 @@ const Services = () => {
                         <div className='cancel'>
                             <i class="bi bi-x"></i>
                         </div>
+                        <div className='cancel'>
+                            <i class="bi bi-x"></i>
+                        </div>
+                        <div className='cancel'>
+                            <i class="bi bi-x"></i>
+                        </div>
                     </div>
                     <Row className="px-5">
                         <Col sm>
@@ -125,7 +131,7 @@ const Services = () => {
                     </Row>
                 </Card>
                 <div className="catchphrase text-center">
-                    <h5 className='title'>What people say about us</h5>
+                    <h5 className='title'>What people say about us.</h5>
                 </div>
 
                 <Carousel autoPlaySpeed={1500} itemsToScroll={2} itemsToShow={2} enableTilt enableAutoPlay breakPoints={breakPoints}>

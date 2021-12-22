@@ -2,10 +2,13 @@ import React, { useRef } from 'react'
 import { Row, Col, Container } from "react-bootstrap";
 import "../../assets/css/faq.css"
 
+
+
+
 const FAQ = () => {
 
     return (
-        <div id="FAQ" className="mainbody-container">
+        <div id="FAQ" className="faq-container py-5">
             <Container className="faq-content">
                 <div className="catchphrase text-center">
                     <h1 className="FAQ-heading">F.A.Q</h1>
@@ -33,7 +36,6 @@ const FAQ = () => {
                     </Row>
                 </div>
             </Container>
-
         </div>
     )
 }
