@@ -29,6 +29,12 @@
     font-size: 40px;
 }
 
+
+.top-container>.cancel {
+    margin-right: 30px !important;
+    margin-left: -28px;
+}
+
 .card {
     border: 1.5px solid #424141;
     background-color: #2B2B2B;
