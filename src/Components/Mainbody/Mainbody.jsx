@@ -1,51 +1,49 @@
-import React, { useRef } from "react";
-import { ArrowRight } from 'react-bootstrap-icons';
+import React from "react";
+import { HiArrowNarrowRight } from 'react-icons/hi';
 import DownArrow from "../DownArrow";
 import { Link } from "react-scroll";
 import { Row, Col, } from "react-bootstrap";
-
+import "./mainbody.css";
 
 const Mainbody = () => {
 
-  const myRef = useRef(null);
-
   return (
-    <div ref={myRef} id="Home" className="mainbody-container">
+    <div id="Home" className="mainbody-container">
       <div className="content">
         <Row className="justify-content-md-center">
           <Col xs="12" md="auto">
-            <div className="mainbody-container__left">
-              <div className="left-container__content">
-                <div className="d-flex">
-                  <div className="technobyte">Technobyte Nepal</div>
+            <div className="mainbody-container">
+              <div className="container__content">
+                <div className="technobyte">
+                  <div className="name mb-3">Technobyte Nepal</div>
                 </div>
                 <div className="catchphrase">
-                  <h1 className="text-responsive">
-                    We build softwares for{" "}
-                    <br />
-                    <span className="catchphrase-for">startups</span> &{" "}
+                  <h1>
+                    We build software for <br />
+                    <span className="catchphrase-for">Startups</span> &{" "}
                     <span className="catchphrase-for">Businesses.</span>
                   </h1>
                 </div>
-                <div className="messaage">
-                  <p className="text-responsive text-center">
-                    Leveraging our design, web, and mobile development team, we help
-                    businesses build end to end digital products.
+                <div className="message">
+                  <p className="text-center">
+                    Leveraging our design, web, and mobile development team, we
+                    help businesses build end to end digital products.
                   </p>
                 </div>
                 <div className="d-flex">
                   <div className="letsworktogether">
-                    <Link to="how_we_work" smooth={true} duration={1000}>Let's work together</Link>
-                    <ArrowRight style={{ marginLeft: "6px", fontSize: "20" }} />
+                    <Link to="how_we_work" smooth={true} duration={1000}>
+                      Let's work together
+                    </Link>
+                    <HiArrowNarrowRight style={{ marginLeft: "6px", fontSize: "20" }} />
                   </div>
                 </div>
               </div>
             </div>
-            <DownArrow myRef={myRef}></DownArrow>
+            <DownArrow></DownArrow>
           </Col>
         </Row>
       </div>
-
     </div>
   );
 };

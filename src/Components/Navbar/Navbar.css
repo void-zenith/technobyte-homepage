@@ -1,0 +1,90 @@
+.navbar-container {
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    z-index: 1000;
+}
+
+.navbar-container__logo {
+    flex: 0.75;
+    text-align: center;
+}
+
+.navbar-container__link {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: var(--primary-font-family) !important;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.navbar-link__item {
+    display: flex;
+    /* flex: 0.2; */
+    margin: 0px 20px;
+    /* justify-content: space-around; */
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.navbar-container__contactus {
+    /* flex: 0.25; */
+    text-align: center;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    overflow-y: hidden;
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    margin-left: 80px;
+
+}
+
+.navbar-container__contactus .contact-container {
+    padding: 12px 30px;
+    cursor: pointer;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    transition: all 0.5s ease;
+    background: transparent;
+}
+
+.navbar-container__contactus .contact-container:hover {
+    background: var(--primary-color);
+    color: black !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../../assets/image/download\ \(1\).svg") !important;
+    outline: none;
+}
+
+.active {
+    text-decoration: none !important;
+    color: #01bf71 !important;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-container__contactus {
+        /* margin-right: 80px; */
+        margin-left: 0px;
+    }
+}

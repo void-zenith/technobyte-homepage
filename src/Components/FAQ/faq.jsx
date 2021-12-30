@@ -1,8 +1,12 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Row, Col, Container } from "react-bootstrap";
 import "../../assets/css/faq.css"
 
+import { animateScroll as scroll } from 'react-scroll';
 
+const Top = () => {
+    scroll.scrollToTop();
+}
 
 
 const FAQ = () => {
@@ -11,9 +15,9 @@ const FAQ = () => {
         <div id="FAQ" className="faq-container py-5">
             <Container className="faq-content">
                 <div className="catchphrase text-center">
-                    <h1 className="FAQ-heading">F.A.Q</h1>
+                    <h1 className="title">F.A.Q</h1>
                 </div>
-                <div style={{ padding: "0px 40px" }}>
+                <div style={{ padding: "0px 80px" }}>
                     <Row>
                         <Col sm className="px-5 pb-5">
                             <div className='faq_questions'>Can we have a chat any time of the day?</div>
@@ -34,7 +38,9 @@ const FAQ = () => {
                             <p className='faq_answer pt-2'>People take psychedelics to experience the unexperienceable.</p>
                         </Col>
                     </Row>
+
                 </div>
+
             </Container>
         </div>
     )

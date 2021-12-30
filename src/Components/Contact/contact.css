@@ -50,9 +50,19 @@
     color: wheat;
     border-left: none;
     box-shadow: none;
-    height: 50px;
+    height: 55px;
 }
 
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-input {
+    width: 380px !important;
+
+}
 
 .send {
     transition: all 0.5s ease;
@@ -63,7 +73,8 @@
     font-weight: 600;
     background-color: #17dd7d;
     text-align: center;
-    width: 80px;
+    width: 100px;
+    margin-left: 20px;
 }
 
 .send:hover {
@@ -92,12 +103,6 @@
     align-items: center;
 }
 
-.arrow-top {
-    bottom: -2325px;
-    text-align: center;
-    left: 618px;
-}
-
 .social-media {
     background-color: #2B2B2B;
     border-radius: 0px;
@@ -109,7 +114,6 @@
     justify-content: center;
     align-items: center;
     margin: 30px 14px;
-    /* 28px 14px */
     cursor: pointer;
     transition: all 0.5s ease;
     color: #17dd7d;
@@ -120,12 +124,21 @@
     color: #2B2B2B;
 }
 
-@media (max-width: 280px) {
 
-    .catchphrase,
-    .email {
+
+@media (min-width: 200px) and (max-width: 600px) {
+
+    .catchphrase {
         padding: 0px 20px;
     }
 
+    .email {
+        flex-direction: column;
+
+    }
+
+    .email-input {
+        padding: 0px 60px;
+    }
 
 }

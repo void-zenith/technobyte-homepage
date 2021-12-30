@@ -4,7 +4,7 @@
     background: #141514;
     color: #d0eade;
     font-family: "Inter";
-    overflow: hidden;
+    overflow-y: hidden;
     padding-top: 80px !important;
 }
 
@@ -23,23 +23,30 @@
 
 .title {
     overflow: hidden;
-    color: #d0eade !important;
-    font-weight: 600;
+    color: var(--heading-text-color);
+    font-weight: bold;
+    font-family: var(--primary-font-family);
+    font-size: 40px;
 }
 
 .card {
-    border: 1px solid #d0eade;
+    border: 1.5px solid #424141;
     background-color: #2B2B2B;
-    height: 180px !important;
-    width: 195px !important;
+    height: 165px !important;
+    width: 260px !important;
     overflow: hidden;
-    font-size: 12px;
+    font-size: 13px;
     border-radius: 0px;
 }
 
+/* 
+.BrainhubCarousel__trackContainer>ul :not(div) {
+    padding-top: 30px !important;
+} */
+
 .our-services {
-    height: 260px !important;
-    width: 700px !important;
+    height: 280px !important;
+    width: 720px !important;
 }
 
 .top-container {
@@ -53,7 +60,7 @@
 .service-name {
     margin-top: 35px;
     font-size: 16px;
-    margin-left: 12px;
+    margin-left: 13px;
 
 }
 
@@ -63,44 +70,105 @@
     margin-right: 13px;
 }
 
-.rec-arrow:hover {
-    background: #17dd7d !important;
-    color: white !important;
 
-}
-
-.rec-arrow-right:hover {
-    padding-left: 20px;
-}
-
-.rec-arrow-left:hover {
+.bio {
+    display: flex;
+    border-bottom: 1.5px solid #424141;
+    padding-bottom: 5px;
+    justify-content: center;
     padding-right: 20px;
 }
 
-.rec-arrow {
-    /* background: white !important; */
-    color: #17dd7d !important;
-    background: none !important;
-    transition: all 0.5s ease;
+.namepos {
+    overflow-y: hidden;
+    margin-left: 5px;
+    margin-top: 7px;
 }
 
-
-.rec {
-    box-shadow: none !important;
+.user-img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 1.3px solid #17dd7d;
+    margin-right: 14px;
 }
 
-.rec-dot {
-    background: #7eb497 !important;
+.name {
+    color: #d0eade;
+    margin-bottom: 0 !important;
+    font-weight: 600;
+    font-size: 14px;
 }
 
+.position {
+    color: #adc0b6;
+}
+
+.description {
+    color: #adc0b6;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 30px;
+}
+
+.prevArrow {
+    position: absolute;
+    top: 40%;
+    left: 2px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.card p {
+    overflow: hidden;
+}
+
+.nextArrow {
+    position: absolute;
+    top: 40%;
+    right: -1px;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.green {
+    color: #61b14b;
+
+}
+
+.yellow,
+.green {
+    margin: 0px 8px;
+    font-size: 15px;
+    border-radius: 50%;
+    height: 15.2px;
+    width: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.yellow {
+    margin-right: 2px;
+}
+
+@media (max-width: 1040px) {
+    .cards {
+        margin: 0px 4px;
+    }
 
 
-@media (min-width: 540px) and (max-width: 770px) {
+}
+
+@media (max-width: 770px) {
 
     .our-services {
-        height: 280px !important;
+        height: 350px !important;
         width: 460px !important;
-
+        margin-right: 10px;
     }
 
     .service-name,
@@ -112,20 +180,33 @@
         margin-left: 0px !important;
     }
 
+
+
     .top-container {
         height: 48px;
         padding-top: 3px;
     }
+
+
 }
 
 
-@media (min-width: 350px) and (max-width: 440px) {
+@media (max-width: 575px) {
+    .our-services {
+        height: 540px !important;
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 465px) {
 
     .card {
-        height: 230px !important;
+        height: 260px !important;
         width: 200px !important;
-        margin-left: 15px;
-        margin-right: 20px;
+    }
+
+    .cards {
+        padding-right: 13px;
     }
 
 
@@ -136,26 +217,26 @@
 
     .bio {
         padding-left: 7px;
+        flex-direction: column;
+        height: 146px;
     }
 
-    .bio {
-        flex-direction: column;
-    }
 
     .user-img {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         margin-left: 10px;
     }
 
     .our-services {
-        height: 280px !important;
-        width: 200px !important;
+        height: 500px !important;
+        width: 280px !important;
+
     }
 
     .service-name,
     .patch-icon {
-        font-size: 12px;
+        font-size: 13.2px;
     }
 
     .service-name {
@@ -168,75 +249,27 @@
     }
 }
 
-
-@media (min-width: 300px) and (max-width: 320px) {
+@media (max-width: 330px) {
 
     .card {
-        height: 250px !important;
-        width: 180px !important;
-        margin-left: 2px;
-
-    }
-
-    .namepos {
-        padding-left: 10px;
-    }
-
-    .bio {
-        padding-left: 7px;
-    }
-
-    .bio {
-        flex-direction: column;
-    }
-
-    .user-img {
-        height: 60px;
-        width: 60px;
-        margin-left: 10px;
-    }
-
-    .our-services {
-        height: 280px !important;
+        height: 265px !important;
         width: 200px !important;
     }
 
-    .service-name,
-    .patch-icon {
-        font-size: 12px;
-    }
-
-    .service-name {
+    .cards {
         margin-left: 0px !important;
     }
 
-    .top-container {
-        height: 48px;
-        padding-top: 3px;
-    }
-
-}
-
-/* Surface duo */
-
-/* Galaxy fold */
-@media (max-width: 280px) {
-
-    .card {
-        height: 274px !important;
-        width: 140px !important;
-        margin-left: 1px;
-
-    }
-
     .our-services {
-        height: 280px !important;
+        height: 620px !important;
         width: 200px !important;
+        overflow-y: hidden;
+
     }
 
     .service-name,
     .patch-icon {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .service-name {
@@ -263,67 +296,31 @@
     }
 
     .user-img {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         margin-left: 10px;
     }
 }
 
-.bio {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #7eb497;
-    padding-bottom: 5px;
+/* Galaxy fold */
+@media (max-width: 280px) {
 
-}
+    .user-img {
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+    }
 
-.namepos {
-    overflow-y: hidden;
-}
+    .card {
+        width: 180px !important;
+        height: 280px !important;
+        margin-left: 10px;
+    }
 
-.user-img {
-    border-radius: 50%;
-    height: 55px;
-    width: 55px;
-    border: 1px solid #7eb497;
-}
-
-.name {
-    color: #d0eade;
-    margin-bottom: 0 !important;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.position {
-    color: #adc0b6;
-}
-
-.description {
-    color: #adc0b6;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 30px;
-}
-
-.prevArrow {
-    position: absolute;
-    top: 40%;
-    left: 2px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
-}
-
-.card p {
-    overflow: hidden;
-}
-
-.nextArrow {
-    position: absolute;
-    top: 40%;
-    right: -1px;
-    z-index: 100;
-    cursor: pointer;
-    font-size: 2rem;
+    .our-services {
+        margin-left: 10px;
+        height: 500px !important;
+        width: 240px !important;
+        overflow-y: hidden;
+    }
 }

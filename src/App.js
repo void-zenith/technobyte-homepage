@@ -1,6 +1,7 @@
 import NavBar from "./Components/Navbar/Navbar";
 import Mainbody from "./Components/Mainbody/Mainbody";
 import "./assets/scss/index.scss";
+import "./assets/css/style.css";
 import Services from "./Components/Services/services";
 import OurTeam from "./Components/OurTeam/OurTeam";
 import HowWeWork from "./Components/HowWeWork/index";
@@ -15,7 +16,7 @@ const App = () => {
       <Mainbody />
       <Services />
       <HowWeWork />
-      <OurTeam />
+      {/* <OurTeam /> */}
       <FAQ />
       <Contact />
     </div>
