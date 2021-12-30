@@ -1,6 +1,6 @@
 import NavBar from "./Components/Navbar/Navbar";
 import Mainbody from "./Components/Mainbody/Mainbody";
-import "./assets/scss/index.scss";
+
 import "./assets/css/style.css";
 import Services from "./Components/Services/services";
 import OurTeam from "./Components/OurTeam/OurTeam";

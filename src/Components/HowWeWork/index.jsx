@@ -37,8 +37,7 @@ const HowWeWork = () => {
                                         <div className="type">Verify</div>
 
                                     </div>
-                                    <div className='cancel'>
-
+                                    <div className='cancel' style={{ marginLeft: "100px !important" }}>
                                         <i class="bi bi-x"></i>
                                     </div>
                                 </div>
@@ -64,7 +63,7 @@ const HowWeWork = () => {
                             <div className="card-container">
                                 <div className="card-head">
                                     <div className="method">
-                                        <HiCollection className="icon" style={{ fontSize: '10px !important' }} />
+                                        <HiCollection className="icon" />
                                         <div className="type">Prototype</div>
                                     </div>
                                     <div className='cancel'>
