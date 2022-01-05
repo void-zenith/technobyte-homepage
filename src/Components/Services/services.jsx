@@ -170,7 +170,7 @@ const Services = () => {
                             ]
                         }
                     }}
-                    animationSpeed={1000}
+                    animationSpeed={4000}
                     className="people-cards"
                 >
                     {peoplesReview.map((card, index) => (

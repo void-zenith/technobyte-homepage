@@ -26,7 +26,7 @@
     color: var(--heading-text-color);
     font-weight: bold;
     font-family: var(--primary-font-family);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -38,8 +38,8 @@
 .card {
     border: 1.5px solid #424141;
     background-color: #2B2B2B;
-    height: 165px !important;
-    width: 260px !important;
+    height: 180px !important;
+    width: 300px !important;
     overflow: hidden;
     font-size: 13px;
     border-radius: 0px;
@@ -51,7 +51,7 @@
 } */
 
 .our-services {
-    height: 280px !important;
+    height: 260px !important;
     width: 720px !important;
 }
 
@@ -97,17 +97,19 @@
     width: 50px;
     border: 1.3px solid #17dd7d;
     margin-right: 14px;
+    margin-top: 5px;
 }
 
 .name {
     color: #d0eade;
     margin-bottom: 0 !important;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .position {
     color: #adc0b6;
+    font-size: 14px;
 }
 
 .description {
@@ -115,6 +117,7 @@
     margin-top: 20px;
     margin-left: 24px;
     margin-right: 30px;
+    font-size: 13.8px;
 }
 
 .prevArrow {
@@ -162,6 +165,7 @@
 }
 
 @media (max-width: 1040px) {
+
     .cards {
         margin: 0px 4px;
     }
@@ -169,17 +173,23 @@
 
 }
 
-@media (max-width: 770px) {
+@media (max-width: 800px) {
+
+    .service-name,
+    .patch-icon {
+        font-size: 16px;
+    }
+
+
+    .card {
+        height: 200px !important;
+        width: 250px !important;
+    }
 
     .our-services {
         height: 350px !important;
         width: 460px !important;
         margin-right: 10px;
-    }
-
-    .service-name,
-    .patch-icon {
-        font-size: 16px;
     }
 
     .service-name {
@@ -193,13 +203,16 @@
         padding-top: 3px;
     }
 
+    .title {
+        font-size: 25px !important;
+    }
 
 }
 
 
 @media (max-width: 575px) {
     .our-services {
-        height: 540px !important;
+        height: 550px !important;
         width: 300px !important;
     }
 }
@@ -207,15 +220,13 @@
 @media (max-width: 465px) {
 
     .card {
-        height: 260px !important;
+        height: 280px !important;
         width: 200px !important;
     }
 
     .cards {
         padding-right: 13px;
     }
-
-
 
     .namepos {
         padding-left: 10px;
@@ -225,6 +236,7 @@
         padding-left: 7px;
         flex-direction: column;
         height: 146px;
+
     }
 
 
@@ -235,7 +247,7 @@
     }
 
     .our-services {
-        height: 500px !important;
+        height: 520px !important;
         width: 280px !important;
 
     }
@@ -253,12 +265,21 @@
         height: 48px;
         padding-top: 3px;
     }
+
+    .description {
+        margin-top: 25px;
+    }
+
+    .title {
+        font-size: 22px !important;
+        letter-spacing: -1.2px;
+    }
 }
 
 @media (max-width: 330px) {
 
     .card {
-        height: 265px !important;
+        height: 275px !important;
         width: 200px !important;
     }
 
@@ -266,8 +287,12 @@
         margin-left: 0px !important;
     }
 
+    .imgdiv {
+        overflow-y: hidden;
+    }
+
     .our-services {
-        height: 620px !important;
+        height: 630px !important;
         width: 200px !important;
         overflow-y: hidden;
 
@@ -312,20 +337,25 @@
 @media (max-width: 280px) {
 
     .user-img {
-        height: 50px;
-        width: 50px;
+        height: 48px;
+        width: 48px;
         margin-left: 10px;
+
+    }
+
+    .imgdiv {
+        overflow-y: hidden;
     }
 
     .card {
         width: 180px !important;
-        height: 280px !important;
+        height: 300px !important;
         margin-left: 10px;
     }
 
     .our-services {
         margin-left: 10px;
-        height: 500px !important;
+        height: 570px !important;
         width: 240px !important;
         overflow-y: hidden;
     }

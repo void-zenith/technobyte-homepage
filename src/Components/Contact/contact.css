@@ -4,6 +4,7 @@
     background: #1a1c19;
     color: white;
     font-family: "Inter";
+
 }
 
 .contact-content {
@@ -108,8 +109,8 @@
     border-radius: 0px;
     border-right: none;
     font-size: 18px;
-    height: 40px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -17,7 +17,7 @@ const FAQ = () => {
                 <div className="catchphrase text-center">
                     <h1 className="title">F.A.Q</h1>
                 </div>
-                <div style={{ padding: "0px 80px" }}>
+                <div className='faq-qa'>
                     <Row>
                         <Col sm className="px-5 pb-5">
                             <div className='faq_questions'>Can we have a chat any time of the day?</div>

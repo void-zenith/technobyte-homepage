@@ -52,7 +52,10 @@ const Logo = () => {
         fonWeight: '500',
         opacity: '0.98',
         fontWeight: 'bolder',
-      }}>
+        cursor: "pointer",
+      }}
+      onClick={() => scroll.scrollToTop()} >
+
       <tspan x="-46.8" y="0">&#123;</tspan><tspan y="0" font-weight="800">t</tspan><tspan y="0">&#125;</tspan>
     </text>
   );

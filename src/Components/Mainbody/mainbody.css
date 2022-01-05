@@ -20,36 +20,38 @@
 
 .container__content .technobyte {
     text-align: center;
-    width: 195px;
+    width: 137px;
     background-color: var(--technobyte-bg-color);
+    margin-top: 40px;
 }
 
 .container__content .technobyte .name {
-    font-size: 21px;
+    font-size: 16.9px;
     font-family: var(--primary-font-family);
     font-weight: normal;
     color: var(--technobyte-text-color);
     position: relative;
-    margin-top: -8px !important;
+    margin-top: -7px !important;
+    opacity: 0.9;
 
 }
 
 .container__content .catchphrase {
     line-height: 6;
     margin-bottom: 25px;
-    letter-spacing: -2.5px;
+    letter-spacing: -5.9px;
     text-align: center;
 }
 
 .container__content .catchphrase h1 {
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 500;
     color: var(--technobyte-text-color);
     font-family: var(--primary-font-family);
 }
 
 .container__content .catchphrase-for {
-    font-size: 70px;
+    font-size: 80px;
     font-family: var(--primary-font-family);
     color: var(--primary-color);
 }
@@ -58,8 +60,8 @@
     margin-bottom: 25px;
     line-height: 2;
     padding-inline-end: 0px 460px !important;
-    width: 400px;
-    font-size: 14px;
+    width: 450px;
+    font-size: 16px;
     font-family: var(--secondary-font-family);
     font-weight: 300;
     color: var(--p-text-color) !important;
@@ -70,7 +72,7 @@
 .container__content .letsworktogether {
     transition: all 0.5s ease;
     width: 220px;
-    height: 50px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,69 +95,100 @@
 @media screen and (min-width: 600px) and (max-width: 800px) {
 
     .container__content .catchphrase-for {
-        font-size: 42px !important;
-        letter-spacing: 0.2px;
+        font-size: 60px !important;
+
     }
 
     h1 {
-        font-size: 42px !important;
-        letter-spacing: 0.6px;
+        font-size: 60px !important;
     }
 }
 
-@media screen and (min-width: 450px) and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
 
     .container__content .catchphrase-for {
-        font-size: 32px !important;
-        letter-spacing: 0.2px;
+        font-size: 50px !important;
     }
 
     h1 {
-        font-size: 32px !important;
-        letter-spacing: 0.6px;
+        font-size: 50px !important;
+    }
+
+    .container__content.message {
+        font-size: 12px !important;
+        letter-spacing: 0.2px !important;
+        width: 250px !important;
     }
 }
 
+@media screen and (max-width: 380px) {
+    .container__content.message {
+        font-size: 12px !important;
+        letter-spacing: 0.3px;
+        width: 290px !important;
+    }
+
+}
 
 @media screen and (max-width: 450px) {
     .container__content.message {
         font-size: 12px !important;
         letter-spacing: 0.3px;
-        width: 300px !important;
+        width: 280px !important;
     }
 
     .container__content .catchphrase-for {
-        font-size: 28px !important;
-        letter-spacing: 0.2px;
+        font-size: 44px !important;
+        letter-spacing: -5.0px;
     }
 
     h1 {
-        font-size: 26px !important;
-        letter-spacing: 0.6px;
+        font-size: 44px !important;
+        letter-spacing: -5.0px;
     }
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
     .container__content .message {
-        width: 300px;
+        width: 350px;
+        font-size: 13px;
     }
 }
 
 
-
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 420px) {
     .container__content .message {
-        width: 250px;
+        width: 280px;
+        font-size: 12px;
     }
 
     h1 {
-        font-size: 25px !important;
+        font-size: 38px !important;
     }
 
     .container__content .catchphrase-for {
-        font-size: 25px !important;
+        font-size: 38px !important;
         width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .container__content .message {
+        width: 220px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 40px !important;
+        letter-spacing: -1.3px;
+    }
+
+    .container__content .catchphrase-for {
+        font-size: 40px !important;
+        width: 250px;
+        letter-spacing: -1.3px;
     }
 
 }

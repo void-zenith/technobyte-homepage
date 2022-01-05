@@ -1,15 +1,53 @@
 
-import React, { useRef } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import React from "react";
+import { Container, Nav } from "react-bootstrap";
+import Navbar from 'react-bootstrap/Navbar'
 import Logo from "../../assets/icons/logo";
 import { Link } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Navbar.css";
+
 const NavBar = () => {
   const links = ["Home", "Services", "How_We_Work", "Our_Team", "FAQ"];
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector(".navbar-container").style.top = "0";
+    } else {
+      document.querySelector(".navbar-container").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+  // const [prevScrollPos, setPrevScrollPos] = useState(0);
+  // const [visible, setVisible] = useState(true);
+
+  // const handleScroll = () => {
+  //   const currentScrollPos = window.pageYOffset;
+  //   console.log(currentScrollPos);
+  //   if (currentScrollPos > prevScrollPos) {
+  //     setVisible(false);
+  //   }
+  //   else {
+  //     setVisible(true);
+  //   }
+  //   // setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+  //   setPrevScrollPos(currentScrollPos);
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => window.removeEventListener('scroll', handleScroll);
+
+  // }, [prevScrollPos, visible, handleScroll]);
+
   return (
     <div>
-      <Navbar className="navbar-container" collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="lg" className="navbar-container" >
         <Container>
           <Navbar.Brand className="navbar-container__logo">
             <Logo />

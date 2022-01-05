@@ -20,8 +20,8 @@ const Mainbody = () => {
                 <div className="catchphrase">
                   <h1>
                     We build software for <br />
-                    <span className="catchphrase-for">Startups</span> &{" "}
-                    <span className="catchphrase-for">Businesses.</span>
+                    <span className="catchphrase-for">&nbsp;Startups</span> &{" "}
+                    <span className="catchphrase-for">Businesses.&nbsp;</span>
                   </h1>
                 </div>
                 <div className="message">

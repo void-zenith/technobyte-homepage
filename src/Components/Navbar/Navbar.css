@@ -6,15 +6,23 @@
     position: fixed;
     width: 100vw;
     font-size: 1rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     color: #fff;
     z-index: 1000;
+    border-bottom: 1px solid rgb(31, 29, 29);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.hidden {
+    top: -50px;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-container__logo {
     flex: 0.75;
-    text-align: center;
+
 }
 
 .navbar-container__link {
@@ -22,17 +30,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
     font-family: var(--primary-font-family) !important;
     color: var(--text-color);
     font-weight: 300;
+    opacity: 0.8;
 }
 
 .navbar-link__item {
     display: flex;
-    /* flex: 0.2; */
     margin: 0px 20px;
-    /* justify-content: space-around; */
     align-items: center;
     list-style-type: none;
     cursor: pointer;
@@ -44,7 +51,7 @@
     /* flex: 0.25; */
     text-align: center;
     font-size: 15px;
-    padding-top: 12px;
+    padding-top: 13px;
     padding-bottom: 12px;
     overflow-y: hidden;
     color: var(--primary-color);
@@ -54,7 +61,7 @@
 }
 
 .navbar-container__contactus .contact-container {
-    padding: 12px 30px;
+    padding: 13px 30px;
     cursor: pointer;
     color: var(--primary-color);
     text-decoration: none;
@@ -76,6 +83,7 @@
 .active {
     text-decoration: none !important;
     color: #01bf71 !important;
+    opacity: 1;
 }
 
 a:hover {
