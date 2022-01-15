@@ -21,29 +21,6 @@ const NavBar = () => {
     prevScrollpos = currentScrollPos;
   }
 
-  // const [prevScrollPos, setPrevScrollPos] = useState(0);
-  // const [visible, setVisible] = useState(true);
-
-  // const handleScroll = () => {
-  //   const currentScrollPos = window.pageYOffset;
-  //   console.log(currentScrollPos);
-  //   if (currentScrollPos > prevScrollPos) {
-  //     setVisible(false);
-  //   }
-  //   else {
-  //     setVisible(true);
-  //   }
-  //   // setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-
-  //   setPrevScrollPos(currentScrollPos);
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => window.removeEventListener('scroll', handleScroll);
-
-  // }, [prevScrollPos, visible, handleScroll]);
 
   return (
     <div>

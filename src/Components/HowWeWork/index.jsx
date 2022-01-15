@@ -48,7 +48,7 @@ const HowWeWork = () => {
                                 <path id="Path_2"
                                     style={{
                                         fill: 'none',
-                                        stroke: '#2b2b2b',
+                                        stroke: '#707070',
                                         strokeLinecap: 'round',
                                         strokeLinejoin: 'round',
                                         strokeWidth: '2px',
@@ -89,7 +89,7 @@ const HowWeWork = () => {
                                 className='arrow-up'
                                 width="77.785" height="66.753" viewBox="0 0 77.785 166.753">
                                 <path id="Path_2" data-name="Path 2" d="M103.457,5l63.927,37.524m0,0L103.457,80.048m63.927-37.524H3"
-                                    transform="translate(-3.631 168.753) rotate(-90)" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    transform="translate(-3.631 168.753) rotate(-90)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                             </svg>
                         </Col>
                         <Col className='arrows' md={6} sm>
@@ -101,7 +101,7 @@ const HowWeWork = () => {
                                 className='arrow-down'
                                 xmlns="http://www.w3.org/2000/svg" width="77.785" height="66.753" viewBox="0 0 77.785 166.753">
                                 <path id="Path_2" data-name="Path 2" d="M103.457,5l63.927,37.524m0,0L103.457,80.048m63.927-37.524H3"
-                                    transform="translate(81.417 -2) rotate(90)" fill="none" stroke="#2b2b2b" stroke-linecap="round"
+                                    transform="translate(81.417 -2) rotate(90)" fill="none" stroke="#707070" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"
                                 />
                             </svg>
@@ -137,7 +137,7 @@ const HowWeWork = () => {
                                 className='arrow-left'
                                 height="77.785" viewBox="0 0 166.753 77.785">
                                 <path id="Path_2" data-name="Path 2" d="M103.457,5l63.927,37.524m0,0L103.457,80.048m63.927-37.524H3" transform="translate(168.753 81.417) rotate(180)"
-                                    fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                             </svg>
                         </Col>
 
