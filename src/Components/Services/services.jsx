@@ -106,7 +106,7 @@ const Services = () => {
                             <BsCircleFill />
                         </div>
                         <div className='cancel'>
-                            <i class="bi bi-x"></i>
+                            <i className="bi bi-x"></i>
                         </div>
                     </div>
                     <Row className="px-5">

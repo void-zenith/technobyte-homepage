@@ -23,11 +23,15 @@
     color: aliceblue;
 }
 
-.catchphrase h7 {
+.catchphrase p {
     color: #90b19f;
     font-size: 17px;
 }
 
+.error {
+    margin-top: '0.25rem';
+    color: #dc3545 !important;
+}
 
 .input-group-text {
     border: 1px solid #738079;

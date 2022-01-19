@@ -51,7 +51,7 @@
 } */
 
 .our-services {
-    height: 260px !important;
+    height: 294px !important;
     width: 720px !important;
 }
 
@@ -163,6 +163,7 @@
 .yellow {
     margin-right: 2px;
 }
+
 
 @media (max-width: 1040px) {
 

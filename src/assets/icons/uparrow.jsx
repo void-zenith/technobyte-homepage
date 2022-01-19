@@ -21,7 +21,7 @@ const UpArrow = () => (
                 <filter id="Rectangle_12" x="0" y="0" width="251" height="251" filterUnits="userSpaceOnUse">
                     <feOffset dy="9" input="SourceAlpha" />
                     <feGaussianBlur stdDeviation="33" result="blur" />
-                    <feFlood flood-opacity="0.02" />
+                    <feFlood floodOpacity="0.02" />
                     <feComposite operator="in" in2="blur" />
                     <feComposite in="SourceGraphic" />
                 </filter>

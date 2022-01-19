@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav } from "react-bootstrap";
 import Navbar from 'react-bootstrap/Navbar'
 import Logo from "../../assets/icons/logo";
@@ -21,21 +21,40 @@ const NavBar = () => {
     prevScrollpos = currentScrollPos;
   }
 
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open);
+  }
+
+  const [openNavbar, setOpenNavbar] = useState(false)
+  const toggleNavbar = () => {
+    setOpenNavbar(!openNavbar);
+  }
 
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" className="navbar-container" >
+      <Navbar collapseOnSelect className="navbar-container" expand="lg" >
         <Container>
           <Navbar.Brand className="navbar-container__logo">
             <Logo />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle onClick={toggle} aria-controls="responsive-navbar-nav">
+            {/* Close mark */}
+            <div
+              className={`close-icon ${open ? "open" : ""}`}>
+
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            {/* close mark ends */}
+          </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="navbar-container__link navbar-container__navbar-link__items">
+            <Nav className={`  me-auto navbar-container__link navbar-container__navbar-link__items`}>
               {links.map((link) => {
                 return (
-                  <Nav.Link className="navbar-link__item">
-                    <Link to={link} smooth={true} duration={600} spy={true}>
+                  <Nav.Link className="navbar-link__item" key={link}>
+                    <Link onClick={toggleNavbar} to={link} smooth={true} duration={600} spy={true}>
                       {link.includes("_") ? link.replaceAll("_", " ") : link}
                     </Link>
                   </Nav.Link>
@@ -58,7 +77,8 @@ const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+
+    </div >
   );
 };
 

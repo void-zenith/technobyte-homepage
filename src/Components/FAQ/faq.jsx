@@ -1,15 +1,25 @@
-import React from 'react'
-import { Row, Col, Container } from "react-bootstrap";
-import "../../assets/css/faq.css"
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getData } from "../../API/FAQ/faqSlice";
 
-import { animateScroll as scroll } from 'react-scroll';
-
-const Top = () => {
-    scroll.scrollToTop();
-}
-
+import { Row, Card, Col, Container } from "react-bootstrap";
+import "./faq.css";
+import Question from './Question';
+import desktopwomen from '../../assets/image/faqdesktop.svg';
+import mobilewomen from '../../assets/image/illustration-woman-online-mobile.svg';
 
 const FAQ = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getData());
+    }, []);
+
+    const { data, loading } = useSelector((state) => state.data);
+    console.log(data);
+
+
 
     return (
         <div id="FAQ" className="faq-container py-5">
@@ -17,30 +27,54 @@ const FAQ = () => {
                 <div className="catchphrase text-center">
                     <h1 className="title">F.A.Q</h1>
                 </div>
-                <div className='faq-qa'>
-                    <Row>
-                        <Col sm className="px-5 pb-5">
-                            <div className='faq_questions'>Can we have a chat any time of the day?</div>
-                            <p className='faq_answer pt-2'>Yes, we are available at all times during office hours.</p>
-                        </Col>
-                        <Col sm className="px-5 pb-5">
-                            <div className='faq_questions'>How is Tushar sir?</div>
-                            <p className='faq_answer pt-2'>He's doing fine, thank you very much.</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col sm className="px-5 pb-5">
-                            <div className='faq_questions'>What is the meaning of life?</div>
-                            <p className='faq_answer pt-2'>The meaning of life is to seek meaning in this hostile and indifferent world.</p>
-                        </Col>
-                        <Col sm className="px-5 pb-5">
-                            <div className='faq_questions'>Why do people take psychedelics?</div>
-                            <p className='faq_answer pt-2'>People take psychedelics to experience the unexperienceable.</p>
-                        </Col>
-                    </Row>
+                {/* <div className='faq-qa'> */}
+                {/* {data.map((faq) =>
+                        <div className="cards">
+                            <Row className="row">
+                                <Col key={faq.id} sm className="col px-5 pb-5">
+                                    <div className='faq_questions'>{faq.question}</div>
+                                    <p className='faq_answer pt-2'>{faq.answer}</p>
+                                </Col>
+                            </Row>
+                        </div>
 
+                    )} */}
+                <div>
+                    <div className="container">
+                        <section className="faq pb-5">
+                            <div className="faq__left">
+                                <picture className="faq__picture">
+                                    <source
+                                        srcSet={mobilewomen}
+                                        media="(max-width: 992px)"
+
+                                    />
+                                    <img
+                                        src={desktopwomen}
+                                        alt="true"
+                                        aria-hidden="true"
+                                        className="desktop"
+                                    />
+                                </picture>
+                            </div>
+
+                            <div className="faq__right">
+                                {/* <h1 className="faq__heading">FAQ</h1> */}
+                                <dl>
+                                    {data.map((faq, index) => (
+                                        <Question
+                                            index={index}
+                                            key={index}
+                                            question={faq.question}
+                                            answer={faq.answer}
+                                        />
+                                    ))}
+                                </dl>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-
+                {/* </div> */}
             </Container>
         </div>
     )
