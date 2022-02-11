@@ -8,7 +8,9 @@ import PatchIcon from '../../assets/icons/index';
 import { BsCircleFill } from 'react-icons/bs';
 import Carousel, { autoplayPlugin, slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Services = () => {
 
@@ -22,53 +24,53 @@ const Services = () => {
         },
         {
             imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
+            alt: 'Samikshya',
+            name: 'Samikshya',
             position: 'CEO WeirdLabs India',
             description: '"Working with technobyte has always been a joy. The CEO is a darling"',
         },
         {
             imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
+            alt: 'Rita',
+            name: 'Rita',
             position: 'CEO WeirdLabs India',
             description: '"Working with technobyte has always been a joy. The CEO is a darling"',
         },
         {
             imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
+            alt: 'Wendy',
+            name: 'Wendy',
             position: 'CEO WeirdLabs India',
             description: '"Working with technobyte has always been a joy. The CEO is a darling"',
         },
         {
             imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
-            position: 'CEO WeirdLabs India',
-            description: '"Working with technobyte has always been a joy. The CEO is a darling"',
-        },
-
-        {
-            imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
+            alt: 'Irene',
+            name: 'Irene',
             position: 'CEO WeirdLabs India',
             description: '"Working with technobyte has always been a joy. The CEO is a darling"',
         },
 
         {
             imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
+            alt: 'Jimmie',
+            name: 'Jimmie',
             position: 'CEO WeirdLabs India',
             description: '"Working with technobyte has always been a joy. The CEO is a darling"',
         },
 
         {
             imageSrc: user1,
-            alt: 'Preet Sonal',
-            name: 'Preet Sonal',
+            alt: 'Rossy',
+            name: 'Rossy',
+            position: 'CEO WeirdLabs India',
+            description: '"Working with technobyte has always been a joy. The CEO is a darling"',
+        },
+
+        {
+            imageSrc: user1,
+            alt: 'yerimi',
+            name: 'yerimi',
             position: 'CEO WeirdLabs India',
             description: '"Working with technobyte has always been a joy. The CEO is a darling"',
         },
@@ -89,7 +91,43 @@ const Services = () => {
 
     ]
 
+    var settings = {
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        autoplay: true,
+        speed: 4000,
+        autoplaySpeed: 4000,
 
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <div id='Services' className="services-container py-5">
             <div className="services-content px-2 container">
@@ -128,51 +166,12 @@ const Services = () => {
                         </Col>
                     </Row>
                 </Card>
-                <div className="catchphrase text-center pt-5">
-                    <h1 className='title'>What people say about us.</h1>
-                </div>
-                <Carousel
-                    plugins={[
-                        'infinite',
-                        {
-                            resolve: slidesToShowPlugin,
-                            options: {
-                                numberOfSlides: 3
-                            }
-                        },
-                        {
-                            resolve: autoplayPlugin,
-                            options: {
-                                interval: 2000,
-                            }
-                        },
-
-                    ]}
-                    breakpoints={{
-                        640: {
-                            plugins: [
-                                {
-                                    resolve: slidesToShowPlugin,
-                                    options: {
-                                        numberOfSlides: 1
-                                    }
-                                },
-                            ]
-                        },
-                        900: {
-                            plugins: [
-                                {
-                                    resolve: slidesToShowPlugin,
-                                    options: {
-                                        numberOfSlides: 2
-                                    }
-                                },
-                            ]
-                        }
-                    }}
-                    animationSpeed={4000}
-                    className="people-cards"
-                >
+            </div>
+            <div className="catchphrase text-center pt-5">
+                <h1 className='title'>What people say about us.</h1>
+            </div>
+            <div className='carousel'>
+                <Slider {...settings}>
                     {peoplesReview.map((card, index) => (
                         <div className="cards">
                             <Card className="card" key={index}>
@@ -191,8 +190,10 @@ const Services = () => {
                             </Card>
                         </div>
                     ))}
-                </Carousel>
-            </div >
+                </Slider>
+            </div>
+
+
         </div >
 
     )

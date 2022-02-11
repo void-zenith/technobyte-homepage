@@ -191,15 +191,15 @@ button {
 
 
 .faq__desc {
-    color: #bce7d0;
+    color: #b1cabd;
     padding: 1em 0;
+    font-size: 1rem;
 }
 
 
 
 
 @media screen and (max-width: 768px) {
-
 
     .faq {
         flex-direction: column;
@@ -227,10 +227,22 @@ button {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 778px) and (max-width: 992px) {
     .faq__left {
         min-width: 35%;
         top: 80px;
+    }
+
+    .faq__right {
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+    .faq__left {
+        min-width: 35%;
+        top: 80px;
+        left: 27%;
     }
 
     .faq__right {
@@ -259,8 +271,6 @@ button {
 
 
 @media screen and (max-width: 1200px) {
-
-
     .faq {
         width: 90%;
     }

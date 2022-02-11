@@ -22,7 +22,6 @@ const alertOptions = {
 const App = () => {
   return (
     <Provider store={store}>
-
       <NavBar />
       <Mainbody />
       <Services />

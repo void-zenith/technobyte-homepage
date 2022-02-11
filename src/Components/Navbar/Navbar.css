@@ -87,10 +87,6 @@
     opacity: 1;
 }
 
-a:hover {
-    color: #fff !important;
-}
-
 .navbar-toggler:focus {
     box-shadow: none !important;
 }

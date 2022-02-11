@@ -7,6 +7,7 @@ const initialState = {
     email: '',
     loading: false,
     error: '',
+    status: 'idle'
 
 };
 
@@ -21,6 +22,7 @@ export const postEmail = createAsyncThunk(
                 email
             )
             return res.data;
+
         }
         catch (error) {
             const errorMsg = error.response.data.email
@@ -44,6 +46,7 @@ const newsLetterSlice = createSlice({
             .addCase(postEmail.fulfilled, (state, action) => {
                 state.loading = false;
                 state.email = action.payload;
+                state.status = 'succeeded';
 
             })
             .addCase(postEmail.rejected, (state, action) => {

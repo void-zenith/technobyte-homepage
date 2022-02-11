@@ -86,7 +86,7 @@
 
 .container__content .letsworktogether:hover {
     background: none;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     border: 1px solid var(--primary-color);
 }
 

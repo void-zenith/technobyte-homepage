@@ -108,6 +108,12 @@
     align-items: center;
 }
 
+input:-internal-autofill-selected {
+    background-color: red !important;
+}
+
+
+
 .social-media {
     background-color: #2B2B2B;
     border-radius: 0px;
@@ -124,12 +130,33 @@
     color: #17dd7d;
 }
 
-.social-media:hover {
-    background-color: #17dd7d;
-    color: #2B2B2B;
+.link {
+    color: #17dd7d;
 }
 
 
+
+.social-media:hover {
+    background-color: #17dd7d !important;
+    color: #2B2B2B !important;
+    transform: scale(0.9);
+}
+
+.social-media-icons:hover {
+    color: #2B2B2B !important;
+    transform: scale(0.9);
+}
+
+.col-social>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0) !important;
+    margin-top: var(--bs-gutter-y);
+    margin-left: 14px;
+    margin-right: 14px;
+}
 
 @media (min-width: 200px) and (max-width: 600px) {
 
