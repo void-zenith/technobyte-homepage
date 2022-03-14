@@ -182,13 +182,21 @@
 
     h1 {
         font-size: 40px !important;
-        letter-spacing: -1.3px;
+        letter-spacing: -3px;
+        /* color: red !important; */
     }
 
     .container__content .catchphrase-for {
         font-size: 40px !important;
         width: 250px;
-        letter-spacing: -1.3px;
+        letter-spacing: -3px;
+    }
+
+    .container__content .letsworktogether {
+
+        width: 180px;
+        height: 55px;
+
     }
 
 }

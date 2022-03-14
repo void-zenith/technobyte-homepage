@@ -32,7 +32,7 @@ const Mainbody = () => {
                 </div>
                 <div className="d-flex">
                   <div className="letsworktogether">
-                    <Link to="how_we_work" smooth={true} duration={1000}>
+                    <Link to="Contact" smooth={true} duration={1000}>
                       Let's work together
                     </Link>
                     <HiArrowNarrowRight style={{ marginLeft: "6px", fontSize: "20" }} />
@@ -40,7 +40,7 @@ const Mainbody = () => {
                 </div>
               </div>
             </div>
-            <DownArrow></DownArrow>
+            {/* <DownArrow></DownArrow> */}
           </Col>
         </Row>
       </div>

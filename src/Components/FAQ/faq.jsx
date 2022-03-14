@@ -17,7 +17,7 @@ const FAQ = () => {
     }, []);
 
     const { data, loading } = useSelector((state) => state.data);
-    console.log(data);
+    // console.log(data);
 
 
 

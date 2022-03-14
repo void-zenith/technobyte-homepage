@@ -26,7 +26,6 @@ export const postEmail = createAsyncThunk(
         }
         catch (error) {
             const errorMsg = error.response.data.email
-            console.log(errorMsg);
             return rejectWithValue(error.response.data);
 
         }

@@ -16,8 +16,12 @@ const store = configureStore({
         data: dataReducer,
         email: newsLetterReducer,
         message: messageReducer,
-        // proof: socialrProofReucer,
+        // proof: socialProofReucer,
 
-    })
+    }),
+    middleware: getDefaultMiddleware =>
+        getDefaultMiddleware({
+            serializableCheck: false,
+        }),
 })
 export default store;

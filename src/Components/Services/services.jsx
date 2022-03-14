@@ -150,7 +150,7 @@ const Services = () => {
                     <Row className="px-5">
                         <Col sm>
                             {col1.map((type, index) => (
-                                <p className="service-name" key={index}>
+                                <p className="service-name" key={type.name}>
                                     <PatchIcon className="patch-icon" />
                                     {type.name}
                                 </p>
@@ -158,7 +158,7 @@ const Services = () => {
                         </Col>
                         <Col sm>
                             {col2.map((type, index) => (
-                                <p className="service-name" key={index}>
+                                <p className="service-name" key={type.name}>
                                     <PatchIcon className="patch-icon" />
                                     {type.name}
                                 </p>
@@ -174,7 +174,7 @@ const Services = () => {
                 <Slider {...settings}>
                     {peoplesReview.map((card, index) => (
                         <div className="cards">
-                            <Card className="card" key={index}>
+                            <Card className="card" key={card.name}>
                                 <div className='bio'>
                                     <div className="imgdiv pt-2">
                                         <img alt={card.alt} src={card.imageSrc} className='user-img' />

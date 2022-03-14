@@ -50,18 +50,18 @@ const NavBar = () => {
             {/* close mark ends */}
           </Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className={`  me-auto navbar-container__link navbar-container__navbar-link__items`}>
+            <Nav className="me-auto navbar-container__link navbar-container__navbar-link__items">
               {links.map((link) => {
                 return (
-                  <Nav.Link className="navbar-link__item" key={link}>
+                  <div className="navbar-link__item" key={link}>
                     <Link onClick={toggleNavbar} to={link} smooth={true} duration={600} spy={true}>
                       {link.includes("_") ? link.replaceAll("_", " ") : link}
                     </Link>
-                  </Nav.Link>
+                  </div>
                 );
               })}
 
-              <Nav.Link className="navbar-container__contactus">
+              <div className="navbar-container__contactus">
 
                 <Link
                   to="Contact"
@@ -72,7 +72,7 @@ const NavBar = () => {
                 >
                   Contact us
                 </Link>
-              </Nav.Link>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
